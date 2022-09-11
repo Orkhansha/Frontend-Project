@@ -1,0 +1,123 @@
+#black-area{
+    background-color: #050713!important;
+    .black-nav{
+        background-color: #050713!important;
+        .navbar-brand{
+            color: white;
+            font-size: 16px;
+            font-weight: 400;
+        }
+        .navbar-toggler{
+            .navbar-toggler-icon{
+            
+            }
+        }
+        .navbar-collapse{
+            .navbar-nav{
+                position: relative;
+                .languages{
+                    .language{
+                        color: white;
+            font-size: 16px;
+            font-weight: 400;
+                    }
+                    .lang-list{
+                        a{
+
+                        }
+                    }
+                }
+                .dollar{
+                    
+                    .moneys{
+                        color: white;
+            font-size: 16px;
+            font-weight: 400;
+                        
+                    }
+                    .money{
+                        li{
+                           
+                            a{
+                                
+                                img,svg{
+                                    width: 25px;
+                                    height: 25px;
+                                    border-radius: 50% !important;
+                                }
+                            }
+                        }
+                    }
+                }
+                
+            }
+            
+        }
+            .right-icones{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 20px;
+                
+                i{
+                    color: white !important;
+    font-size: 18px;
+    font-weight: bold;
+                }
+                
+                .profil-photo{
+                    
+                    img{
+                        width: 30px;
+                        height: 30px;
+                        border-radius: 50%;
+    
+                    }
+                }
+            }
+       
+    }
+    
+}
+
+
+#white-area{
+    background-color: #F3F3F4;
+    .navbar-brand{
+        img{
+
+        }
+    }
+    .search-login{
+        margin: 30px;
+        display: flex;
+        position: relative;
+       
+        .search-inp{
+            border: 1px solid whitesmoke;
+            width: 550px;
+    height: 40px;
+    text-align: left;
+    opacity: 0.7;
+    padding-left: 20px;
+        }
+        .fa-magnifying-glass{
+            font-size: 16px;
+            right: 25px;
+            top: 10px;
+            position: absolute;
+        }
+        .unknn{
+            width: 250px;
+    height: 30px;
+    text-align: center;
+        }
+        a{
+            color: white;
+    text-decoration: none;
+    font-size: 18px;
+    margin-left: 30px;
+    margin-top: 5px;
+        }
+    }
+}

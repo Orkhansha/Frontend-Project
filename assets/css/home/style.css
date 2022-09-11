@@ -1,0 +1,174 @@
+#black-area {
+  background-color: #050713 !important;
+}
+#black-area .black-nav {
+  background-color: #050713 !important;
+}
+#black-area .black-nav .navbar-brand {
+  color: white;
+  font-size: 16px;
+  font-weight: 400;
+}
+#black-area .black-nav .navbar-collapse .navbar-nav {
+  position: relative;
+}
+#black-area .black-nav .navbar-collapse .navbar-nav .languages .language {
+  color: white;
+  font-size: 16px;
+  font-weight: 400;
+}
+#black-area .black-nav .navbar-collapse .navbar-nav .dollar .moneys {
+  color: white;
+  font-size: 16px;
+  font-weight: 400;
+}
+#black-area .black-nav .navbar-collapse .navbar-nav .dollar .money li a img, #black-area .black-nav .navbar-collapse .navbar-nav .dollar .money li a svg {
+  width: 25px;
+  height: 25px;
+  border-radius: 50% !important;
+}
+#black-area .black-nav .right-icones {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+#black-area .black-nav .right-icones i {
+  color: white !important;
+  font-size: 18px;
+  font-weight: bold;
+}
+#black-area .black-nav .right-icones .profil-photo img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+#white-area {
+  background-color: #F3F3F4;
+}
+#white-area .search-login {
+  margin: 30px;
+  display: flex;
+  position: relative;
+}
+#white-area .search-login .search-inp {
+  border: 1px solid whitesmoke;
+  width: 550px;
+  height: 40px;
+  text-align: left;
+  opacity: 0.7;
+  padding-left: 20px;
+}
+#white-area .search-login .fa-magnifying-glass {
+  font-size: 16px;
+  right: 25px;
+  top: 10px;
+  position: absolute;
+}
+#white-area .search-login .unknn {
+  width: 250px;
+  height: 30px;
+  text-align: center;
+}
+#white-area .search-login a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  margin-left: 30px;
+  margin-top: 5px;
+}/*# sourceMappingURL=style.css.map */
+
+
+/* carousel css */
+.swiper{
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+}
+.swiper-slide-text{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+}
+.swiper-slide-text button{
+  width: 120px;
+  padding: 6px 0;
+  border-radius: 5px;
+  border: none;
+}
+.swiper-slide-text h1{
+  margin-bottom: 0 !important;
+}
+.swiper-slide-text p{
+  margin-bottom: 0 !important;
+}
+.swiper-slide{
+  width: 350px;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.swiper-slide h4{
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: rgb(170, 155, 155);
+}
+.swiper-slide img{
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 0.5rem !important;
+  filter:brightness(0.5)
+}
+
+.swiper-button-next{
+  right: 4% !important;
+  top: 46% !important;
+}
+.swiper-button-prev{
+  left: 4% !important;
+  top: 46% !important;
+}
+ .carousell-section{
+  padding-top: 70px;
+  position: relative;
+} 
+.component-section{
+  padding: 50px;
+}
+.component-row{
+  display: flex;
+  justify-content: space-between;
+}
+.component-card{
+  position: relative;
+  width: 31.5%;
+  box-shadow: 0 1px 1px 0 rgba(0,0,0,.14),0 2px 1px -1px rgba(0,0,0,.12),0 1px 3px 0 rgba(0,0,0,.2)!important;
+};
+.shop
+.component-text{
+  width: 80% !important;
+  margin-left: auto;
+}
+@media (max-width:800px){
+  .swiper-button-next{
+    right: 0 !important;
+  }
+  .swiper-button-prev{
+    left: 0 !important;
+  }
+
+}
