@@ -1,0 +1,47 @@
+.row {
+  position: relative;
+}
+.row .img-head img {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+.row .text-head {
+  left: 80px;
+  position: absolute;
+}
+.row .prof-det {
+  height: 380px;
+  margin-top: 40px;
+  border: 1px solid rgba(205, 228, 248, 0.747);
+  border-top: none;
+  padding: 20px;
+}
+.row .prof-det div {
+  margin: 20px;
+}
+.row .prof-det i {
+  cursor: pointer;
+  padding-right: 15px;
+}
+.row .prof-det a {
+  cursor: pointer;
+}
+.row .prof-info {
+  height: 380px;
+  margin-top: 40px;
+  border: 1px solid rgba(205, 228, 248, 0.747);
+  border-top: none;
+  padding: 20px;
+}
+.row .prof-info table tr td {
+  padding-top: 10px;
+  padding: 0 10px;
+}
+.row .prof-info .btn-outline-success {
+  background-color: #FF5722;
+  color: white;
+  width: 60px;
+  font-weight: 500;
+}/*# sourceMappingURL=profile.css.map */

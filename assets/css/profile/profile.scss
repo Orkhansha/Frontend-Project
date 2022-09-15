@@ -1,0 +1,60 @@
+.row{
+    position: relative;
+    .img-head{
+        
+        img{
+            position: absolute;
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+        }
+    }
+    .text-head{
+        left: 80px;
+        position: absolute;
+    }
+    .prof-det{
+        height: 380px;
+        margin-top: 40px;
+        border: 1px solid rgba(205, 228, 248, 0.747);
+        border-top: none;
+        padding: 20px;
+        
+
+        div{
+            margin: 20px;
+        }
+
+        i{
+            cursor: pointer;
+            padding-right: 15px;
+        }
+        a{
+            cursor: pointer;
+        }
+    }
+    .prof-info{
+        height: 380px;
+        margin-top: 40px;
+        border: 1px solid rgba(205, 228, 248, 0.747);
+        border-top: none;
+        padding: 20px;
+
+        table{
+            tr{
+                td{
+                    padding-top: 10px;
+                    padding: 0 10px;
+                }
+            }
+        }
+
+        .btn-outline-success{
+            background-color: #FF5722;
+            color: white;
+            width: 60px;
+            font-weight: 500;
+        }
+        
+    }
+}

@@ -1,0 +1,154 @@
+* {
+    margin-top: 0;
+    margin-left: 0;
+    box-sizing: border-box;
+    font-family: 'Lobster', cursive;
+    font-family: 'Open Sans', sans-serif;
+}
+#header{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+   text-align: center;
+   align-items: center;
+    margin-top: -143px;
+    background-image: url(../../img/page-title-bar.jpg);
+    background-size: cover;
+    
+    .head-img{
+        padding-top: 100px;
+
+       h1{
+        font-size: 50px;
+        color: white;
+       }
+       span{
+        color: white;
+        font-size: 18px;
+        font-weight: 300;
+       }
+
+    }
+}
+
+#map-area{
+    opacity: 0.8;
+    .mapouter {
+        
+        position: relative;
+        text-align: right;
+        height: 400px;
+        width: 100%;
+    }
+    .gmap_canvas {
+        overflow: hidden;
+        background: none !important;
+        height: 400px;
+        width: 100%;
+    }
+
+}
+
+#textes{
+    a{
+        text-decoration: none;
+    }
+    .text-left{
+        h5{
+            padding: 20px 0 20px;
+        }
+        h6{
+            padding: 10px 0 10px 0;
+        }
+    }
+    .Contact-us {
+        transform: translateY(0);
+        opacity: 1;
+        transition-delay: 0.1s;
+   }
+   .contact-us-btn{
+    width: 150px;
+    height: 40px;
+    color: white;
+    background: #FF5722;
+   }
+
+   .input-button {
+      padding: 8px 12px;
+      outline: none;
+      border: 0;
+      color: #fff;
+      border-radius: 4px;
+      background: #8c7569;
+      font-family: "Nunito", sans-serif;
+      transition: 0.3s;
+      cursor: pointer;
+    
+      &:hover {
+        background: #55311c;
+      }
+    }
+    
+    
+    
+      &:focus-within {
+        border-color: #8c7569;
+    
+        .input-label {
+          color: rgba(#8c7569, 0.8);
+        }
+      }
+    }
+    
+
+
+
+
+
+.form-wrapper {
+    min-width: 300px;
+    padding: 50px 30px 50px 30px;
+    background-color: #ffffff;
+  }
+  
+  .form-group {
+    position:relative;  
+  
+    & + .form-group {
+      margin-top: 30px;
+    }
+  }
+  
+  .form-label {
+    position: absolute;
+    left: 0;
+    top: 10px;
+    color: #999;
+    background-color: #fff;
+    z-index: 10;
+    transition: transform 150ms ease-out, font-size 150ms ease-out;
+  }
+  
+  .focused .form-label {
+    transform: translateY(-125%);
+    font-size: .75em;
+  }
+  
+  .form-input {
+    position: relative;
+    padding: 12px 0px 5px 0;
+    width: 100%;
+    outline: 0;
+    border: 0;
+    box-shadow: 0 1px 0 0 #e5e5e5;
+    transition: box-shadow 150ms ease-out;
+    
+    &:focus {
+      box-shadow: 0 2px 0 0 blue;
+    }
+  }
+  
+  .form-input.filled {
+    box-shadow: 0 2px 0 0 lightgreen;
+  }

@@ -1,0 +1,125 @@
+* {
+  margin-top: 0;
+  margin-left: 0;
+  box-sizing: border-box;
+  font-family: "Lobster", cursive;
+  font-family: "Open Sans", sans-serif;
+}
+
+#header {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  margin-top: -143px;
+  background-image: url(../../img/product-detail/page-title-bar.jpg);
+  background-size: cover;
+}
+#header .head-img {
+  padding-top: 100px;
+}
+#header .head-img h1 {
+  font-size: 50px;
+  color: white;
+}
+#header .head-img span {
+  color: white;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+#product-detail {
+  padding-top: 50px;
+}
+#product-detail .my-container {
+  width: 97%;
+  margin: auto;
+}
+#product-detail .price {
+  font-size: 20px;
+}
+#product-detail select {
+  width: 230px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid grey;
+  cursor: pointer;
+}
+#product-detail button {
+  width: 150px;
+  height: 50px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.4);
+}
+#product-detail .first {
+  background-color: #ff5722;
+  color: white;
+}
+#product-detail .second {
+  background-color: white;
+  margin-left: 10px;
+}
+#product-detail .share {
+  display: flex;
+}
+#product-detail .share span {
+  margin-top: 5px;
+}
+#product-detail .share .social {
+  display: flex;
+  gap: 10px;
+  padding-left: 15px;
+}
+#product-detail .share .social .soc {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.4);
+  background-color: #283593;
+  transition: 0.3s;
+  cursor: pointer;
+}
+#product-detail .share .social .soc:hover {
+  background-color: white;
+}
+#product-detail .share .social .soc:hover i {
+  color: #283593;
+}
+#product-detail .share .social .soc i {
+  padding-left: 14px;
+  padding-top: 12px;
+  color: white;
+}
+#product-detail a {
+  color: black;
+}
+#product-detail .price {
+  color: #ff5722;
+}
+#product-detail #big-photo {
+  display: flex;
+  margin: auto;
+}
+#product-detail #middle-photo img {
+  width: 26vw;
+  border-radius: 0.8rem;
+  height: 750px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+}
+#product-detail #small-photo {
+  width: 26vw;
+  margin-right: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 20px;
+}
+#product-detail #small-photo img {
+  border-radius: 0.8rem;
+  height: 100px;
+  cursor: pointer;
+}/*# sourceMappingURL=product.css.map */
