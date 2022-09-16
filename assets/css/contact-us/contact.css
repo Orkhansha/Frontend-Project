@@ -130,4 +130,22 @@
 
 .form-input.filled {
   box-shadow: 0 2px 0 0 lightgreen;
+}
+
+#my-footer {
+  background-color: black !important;
+}
+#my-footer a {
+  text-decoration: none;
+}
+#my-footer a:hover {
+  transform-origin: 0% 50%;
+  transform: scaleX(1);
+}
+#my-footer .copyright {
+  display: flex;
+  justify-content: space-between;
+}
+#my-footer .text-center {
+  text-align: left !important;
 }/*# sourceMappingURL=contact.css.map */

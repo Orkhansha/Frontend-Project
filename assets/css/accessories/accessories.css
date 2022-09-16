@@ -71,7 +71,7 @@
 #products .productFirst {
   position: relative;
   margin-top: 30px;
-  width: 310px;
+  width: 100%;
   height: 256px;
   border-radius: 5px 5px 0 0;
   background-color: white;
@@ -100,7 +100,7 @@
 }
 #products .productFirstInfo {
   position: relative;
-  width: 310px;
+  width: 100%;
   height: 117px;
   border-radius: 0 0 5px 5px;
   background-color: white;
@@ -172,6 +172,9 @@
   border-radius: 5px;
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.4);
   background-color: white;
+}
+#products .categories label {
+  padding-left: 10px;
 }
 #products .categories .searchInline {
   width: 100%;
@@ -379,4 +382,23 @@ select {
   padding-left: 18px;
   font-size: 20px;
   color: white;
+}
+
+#my-footer {
+  background-color: black !important;
+}
+#my-footer li a {
+  text-decoration: none;
+  transition: 0.2s;
+}
+#my-footer li a:hover {
+  color: #FF4816 !important;
+  transition: 0.2s;
+}
+#my-footer .copyright {
+  display: flex;
+  justify-content: space-between;
+}
+#my-footer .text-center {
+  text-align: left !important;
 }/*# sourceMappingURL=accessories.css.map */

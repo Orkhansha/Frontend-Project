@@ -58,3 +58,28 @@
         
     }
 }
+
+#my-footer {
+    background-color: black !important;
+    li{
+      a {
+        text-decoration: none;
+        transition: 0.2s;
+        &:hover {
+          color: #FF4816 !important;
+          transition: 0.2s;
+        }
+      }
+    }
+  
+    .copyright {
+      display: flex;
+      justify-content: space-between;
+    }
+  
+    .text-center {
+      text-align: left !important;
+    }
+  }
+  
+  

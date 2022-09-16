@@ -22,7 +22,7 @@ body {
   bottom: 0;
   width: 100%;
   height: 60px;
-  background: rgba(51, 51, 51, 0.5);
+  background: rgba(40, 53, 147, 0.85);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -75,7 +75,7 @@ body {
 }
 .modal-button:hover {
   border-color: rgba(255, 255, 255, 0.2);
-  background: rgba(255, 255, 255, 0.8);
+  background: mediumvioletred;
 }
 .modal-right {
   flex: 2;
@@ -93,7 +93,7 @@ body {
 }
 .modal.is-open {
   height: 100%;
-  background: rgba(51, 51, 51, 0.85);
+  background: rgba(40, 53, 147, 0.85);
 }
 .modal.is-open .modal-button {
   opacity: 0;

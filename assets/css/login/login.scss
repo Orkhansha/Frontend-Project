@@ -23,7 +23,8 @@ body {
   bottom: 0;
   width: 100%;
   height: 60px;
-  background: rgba(#333, 0.5);
+  background: rgba(#283593, 0.85);
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -81,7 +82,7 @@ body {
     
     &:hover {
       border-color: rgba(255, 255, 255, 0.2);
-      background: rgba(#fff, 0.8);
+      background: mediumvioletred;
     }
   }
 
@@ -102,7 +103,7 @@ body {
 
   &.is-open {
     height: 100%;
-    background: rgba(#333, 0.85);
+    background: rgba(#283593, 0.85);
 
     .modal-button {
       opacity: 0;
@@ -314,7 +315,6 @@ a{
 .form-input.filled {
   box-shadow: 0 2px 0 0 lightgreen;
 }
-
 
 
 @media(max-width: 750px) {

@@ -122,4 +122,23 @@
   border-radius: 0.8rem;
   height: 100px;
   cursor: pointer;
+}
+
+#my-footer {
+  background-color: black !important;
+}
+#my-footer li a {
+  text-decoration: none;
+  transition: 0.2s;
+}
+#my-footer li a:hover {
+  color: #FF4816 !important;
+  transition: 0.2s;
+}
+#my-footer .copyright {
+  display: flex;
+  justify-content: space-between;
+}
+#my-footer .text-center {
+  text-align: left !important;
 }/*# sourceMappingURL=product.css.map */

@@ -44,4 +44,23 @@
   color: white;
   width: 60px;
   font-weight: 500;
+}
+
+#my-footer {
+  background-color: black !important;
+}
+#my-footer li a {
+  text-decoration: none;
+  transition: 0.2s;
+}
+#my-footer li a:hover {
+  color: #FF4816 !important;
+  transition: 0.2s;
+}
+#my-footer .copyright {
+  display: flex;
+  justify-content: space-between;
+}
+#my-footer .text-center {
+  text-align: left !important;
 }/*# sourceMappingURL=profile.css.map */

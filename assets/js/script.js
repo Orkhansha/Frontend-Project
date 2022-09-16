@@ -88,10 +88,10 @@ $(function () {
     slidesPerView:4,
     loop:true,
     spaceBetween:20,
-    autoplay:{
-        delay:3000,
-        disableOnInteraction:false,
-    },
+    // autoplay:{
+    //     delay:3000,
+    //     disableOnInteraction:false,
+    // },
     breakpoints:{
         0:{
             slidesPerView:1,

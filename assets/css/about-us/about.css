@@ -6,6 +6,10 @@
   font-family: "Open Sans", sans-serif;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 #header {
   width: 100%;
   height: 500px;
@@ -13,7 +17,6 @@
   justify-content: center;
   text-align: center;
   align-items: center;
-  margin-top: -143px;
   background-image: url(../../img/img-about/page-title-bar.jpg);
   background-size: cover;
 }
@@ -56,6 +59,9 @@
   height: 50px;
   border-radius: 0;
 }
+#first-about img {
+  width: 100%;
+}
 
 #second-about .text-about {
   width: 100%;
@@ -82,6 +88,9 @@
   width: 150px;
   height: 50px;
   border-radius: 0;
+}
+#second-about img {
+  width: 100%;
 }
 
 #third-about .text-about {
@@ -110,7 +119,187 @@
   height: 50px;
   border-radius: 0;
 }
+#third-about img {
+  width: 100%;
+}
 
+#slide-card-foot {
+  height: 600px;
+  padding-top: 50px;
+  text-align: center;
+  background-image: url(../../img/img-about/down-background.jpg);
+}
+#slide-card-foot h1 {
+  color: white;
+  padding-bottom: 0;
+}
+#slide-card-foot .carousell-section {
+  padding-top: 0;
+}
+#slide-card-foot .carousell-section .mySwiper2 .swiper-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: white;
+}
+#slide-card-foot .carousell-section .mySwiper2 .swiper-wrapper h5 {
+  color: white;
+  font-weight: 600;
+  margin-top: 20px;
+}
+#slide-card-foot .carousell-section .mySwiper2 .swiper-wrapper img {
+  display: block;
+  width: 150px !important;
+  height: 150px !important;
+  border-radius: 50% !important;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  filter: brightness(1) !important;
+}
+#slide-card-foot .swiper {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+}
+#slide-card-foot .swiper-slide {
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+#slide-card-foot .swiper-slide h4 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: rgb(170, 155, 155);
+}
+#slide-card-foot .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  border-radius: 0.5rem !important;
+  filter: brightness(0.5);
+}
+#slide-card-foot .swiper-button-next {
+  right: 4% !important;
+  top: 46% !important;
+}
+#slide-card-foot .swiper-button-prev {
+  left: 4% !important;
+  top: 46% !important;
+}
+#slide-card-foot .carousell-section {
+  padding-top: 70px;
+  position: relative;
+}
+#slide-card-foot .component-section {
+  padding: 50px;
+}
+#slide-card-foot .component-row {
+  display: flex;
+  justify-content: space-between;
+}
+#slide-card-foot .component-card {
+  position: relative;
+  width: 31.5%;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12), 0 1px 3px 0 rgba(0, 0, 0, 0.2) !important;
+}
+#slide-card-foot .component-card .component-text {
+  padding-left: 90px;
+}
+#slide-card-foot .shop-iconn {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: #283593;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  color: white;
+  position: absolute;
+  top: -35px;
+  left: 20px;
+}
+#slide-card-foot img {
+  width: 100%;
+}
+
+.form-wrapper {
+  margin: 50px auto;
+  background-color: #ffffff;
+  border-radius: 5px;
+}
+
+.form-group {
+  position: relative;
+}
+.form-group + .form-group {
+  margin-top: 30px;
+}
+
+.form-label {
+  position: absolute;
+  left: 0;
+  top: 10px;
+  color: #999;
+  z-index: 10;
+  transition: transform 150ms ease-out, font-size 150ms ease-out;
+}
+
+.focused .form-label {
+  transform: translateY(-125%);
+  font-size: 0.75em;
+}
+
+.form-input {
+  position: relative;
+  padding: 12px 0px 5px 0;
+  width: 100%;
+  outline: 0;
+  border: 0;
+  box-shadow: 0 1px 0 0 #e5e5e5;
+  transition: box-shadow 150ms ease-out;
+}
+.form-input:focus {
+  box-shadow: 0 1px 0 0 black;
+}
+
+.form-input.filled {
+  box-shadow: 0 2px 0 0 lightgreen;
+}
+
+#foot-cards h1 {
+  padding: 50px 0;
+  text-align: center;
+}
+#foot-cards .card {
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+#foot-cards .card img {
+  margin: 20px 0;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+#foot-cards .card .card-body {
+  width: 100%;
+  padding: 1px;
+}
+#textes {
+  padding: 0;
+}
 #textes a {
   text-decoration: none;
 }
@@ -194,74 +383,21 @@
   color: rgba(140, 117, 105, 0.8);
 }
 
-#bg-photo-text {
-  width: 100%;
-  height: 500px;
-  background-image: url(../../img/img-about/down-background.jpg);
+#my-footer {
+  background-color: black !important;
 }
-
-.form-wrapper {
-  margin: 50px auto;
-  background-color: #ffffff;
-  border-radius: 5px;
+#my-footer li a {
+  text-decoration: none;
+  transition: 0.2s;
 }
-
-.form-group {
-  position: relative;
+#my-footer li a:hover {
+  color: #FF4816 !important;
+  transition: 0.2s;
 }
-.form-group + .form-group {
-  margin-top: 30px;
-}
-
-.form-label {
-  position: absolute;
-  left: 0;
-  top: 10px;
-  color: #999;
-  z-index: 10;
-  transition: transform 150ms ease-out, font-size 150ms ease-out;
-}
-
-.focused .form-label {
-  transform: translateY(-125%);
-  font-size: 0.75em;
-}
-
-.form-input {
-  position: relative;
-  padding: 12px 0px 5px 0;
-  width: 100%;
-  outline: 0;
-  border: 0;
-  box-shadow: 0 1px 0 0 #e5e5e5;
-  transition: box-shadow 150ms ease-out;
-}
-.form-input:focus {
-  box-shadow: 0 1px 0 0 black;
-}
-
-.form-input.filled {
-  box-shadow: 0 2px 0 0 lightgreen;
-}
-
-#foot-cards h1 {
-  padding: 50px 0;
-  text-align: center;
-}
-#foot-cards .card {
-  border: none;
+#my-footer .copyright {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+  justify-content: space-between;
 }
-#foot-cards .card img {
-  margin: 20px 0;
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-}
-#foot-cards .card .card-body {
-  width: 100%;
-  padding: 1px;
+#my-footer .text-center {
+  text-align: left !important;
 }/*# sourceMappingURL=about.css.map */

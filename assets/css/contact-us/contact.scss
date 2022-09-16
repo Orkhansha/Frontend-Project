@@ -152,3 +152,24 @@
   .form-input.filled {
     box-shadow: 0 2px 0 0 lightgreen;
   }
+
+  
+#my-footer {
+  background-color: black !important;
+  a {
+    text-decoration: none;
+    &:hover {
+      transform-origin: 0% 50%;
+      transform: scaleX(1);
+    }
+  }
+
+  .copyright {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .text-center {
+    text-align: left !important;
+  }
+}
