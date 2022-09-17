@@ -89,6 +89,10 @@ body {
   display: flex;
   cursor: pointer;
 }
+#black-area .container .icons .prof-drop .dropdown-item {
+  color: #1e2125;
+  background-color: white;
+}
 #black-area .container .icons .prof-drop i {
   color: #000;
 }

@@ -1,10 +1,4 @@
-$("#small-photo img").mouseover(function () {
-    document.getElementById("photo").src= this.src;
-})
-
-
-
-$(function () {
+  $(function () {
 
 
     let scrollSection = document.getElementById("scroll-section");

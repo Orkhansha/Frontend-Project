@@ -6,25 +6,548 @@
   font-family: "Open Sans", sans-serif;
 }
 
-#header {
+#top-area {
+  background-color: #333F99;
+}
+#top-area .container {
+  padding: 10px 30px 10px 0;
+  height: 65px;
+  background-color: #333F99 !important;
+}
+#top-area .container .my-row {
+  background-color: #333F99 !important;
+}
+#top-area .container .my-btn {
+  width: 100px;
+  height: 45px;
+  padding-top: 10px;
+  border: none;
+  background-color: #333F99;
+}
+#top-area .container .flag-menu li img {
+  width: 26px;
+  height: 26px;
+}
+#top-area .container .logo-nav {
+  height: 50px;
+}
+#top-area .container .icons {
+  display: flex;
+  float: right;
+}
+#top-area .container .icons .icn-shop {
+  background-color: #FF5722;
+  border-radius: 50%;
+}
+#top-area .container .icons .icn-heart {
+  background-color: #FF5722;
+  border-radius: 50%;
+}
+#top-area .container .icons div {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  cursor: pointer;
+}
+#top-area .container .icons div img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  position: absolute;
+}
+#top-area .container .icons div i {
+  color: white;
+  font-size: 18px;
+  position: absolute;
+}
+#top-area .container .icons sup {
+  font-size: 20px;
+  padding: 4px;
+  /* top: 5px; */
+  /* right: 5px; */
+  background-color: #FF5722;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  left: -15px;
+}
+#top-area .container .icons div:nth-child(1) {
+  border-left: none;
+}
+
+#navbar-area {
+  background-color: #283593;
+  z-index: 2;
+  width: 100%;
+  display: block;
+  transition: 0.5s;
+}
+#navbar-area .navbar {
+  padding-left: 400px;
+  background-color: #283593 !important;
+}
+#navbar-area nav {
+  float: inherit !important;
+}
+#navbar-area .container nav {
+  margin-left: 20px;
+}
+#navbar-area .container .btn {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+#navbar-area .container .btn .admin {
+  background-color: #FF5722;
+  width: 125px;
+}
+#navbar-area .container .btn li {
+  display: inline-block;
+  transition: all 0.3s ease-in-out;
+  margin-right: 25px;
+  z-index: 2;
+}
+#navbar-area .container .btn li .nav-a {
+  color: white;
+  display: block;
+  text-decoration: none;
+  position: relative;
+  margin-top: 15px;
+  padding-bottom: 10px;
+}
+#navbar-area .container .btn li .nav-a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  bottom: -10px;
+  left: 0px;
+  background-color: #FF5722;
+  transition: all 0.2s ease-in-out;
+  transform: scale(0, 0);
+  visibility: hidden;
+}
+#navbar-area .container .btn li:hover .home {
+  height: 120px;
+  z-index: 2;
+}
+#navbar-area .container .btn li:hover .submenu {
+  height: 160px;
+  z-index: 2;
+}
+#navbar-area .container .btn li:hover .categori {
+  height: 250px;
+  z-index: 2;
+}
+#navbar-area .container .btn li:hover a::before {
+  visibility: visible;
+  transform: scale(1, 1);
+}
+#navbar-area .container .btn li .home {
+  overflow: hidden;
+  position: absolute;
+  margin-top: 10px;
+  background-color: white;
+  height: 0;
+  width: 150px;
+  line-height: 40px;
+  transition: height 0.3s ease-in-out;
+  transition-delay: 0.1s;
+  text-align: left;
+  padding-left: 15px;
+  border-radius: 5px;
+}
+#navbar-area .container .btn li .home a {
+  color: #000;
+  font-size: 16px;
+  text-decoration: none;
+}
+#navbar-area .container .btn li .submenu {
+  overflow: hidden;
+  position: absolute;
+  margin-top: 10px;
+  background-color: white;
+  height: 0;
+  width: 165px;
+  line-height: 40px;
+  transition: height 0.3s ease-in-out;
+  transition-delay: 0.1s;
+  text-align: left;
+  padding-left: 15px;
+  border-radius: 5px;
+}
+#navbar-area .container .btn li .submenu a {
+  color: #000;
+  font-size: 16px;
+  text-decoration: none;
+}
+#navbar-area .container .btn li .categori {
+  overflow: hidden;
+  position: absolute;
+  margin-top: 10px;
+  background-color: white;
+  height: 0;
+  width: 800px;
+  line-height: 30px;
+  text-align: left;
+  transition: height 0.3s ease-in-out;
+  transition-delay: 0.2s;
+  text-align: left;
+  margin-left: -200px;
+  border-radius: 10px;
+}
+#navbar-area .container .btn li .categori table td {
+  border: none;
+}
+#navbar-area .container .btn li .categori table th {
+  font-size: 17px;
+  color: blue;
+}
+#navbar-area .container .btn li .categori table th:hover {
+  color: #000;
+}
+#navbar-area .container .btn h1 {
+  text-align: center;
+  font-family: satisfy;
+  font-weight: 300;
+}
+#navbar-area .inActive {
+  display: none;
+}
+#navbar-area .head {
+  height: 60px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+#navbar-area .head img {
+  position: absolute;
+  color: white !important;
+}
+#navbar-area nav {
+  float: right;
+}
+#navbar-area .btn {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+#navbar-area .btn .admin {
+  background-color: #FF5722;
+  width: 125px;
+  padding-top: 4px;
+  margin-right: 0;
+}
+#navbar-area .btn li {
+  display: inline-block;
+  transition: all 0.3s ease-in-out;
+  margin-right: 25px;
+}
+#navbar-area .btn li .nav-a {
+  color: white;
+  display: block;
+  text-decoration: none;
+  position: relative;
+  margin-top: 15px;
+  padding-bottom: 10px;
+}
+#navbar-area .btn li .home {
+  overflow: hidden;
+  position: absolute;
+  margin-top: 10px;
+  background-color: white;
+  height: 0;
+  width: 150px;
+  line-height: 40px;
+  transition: height 0.3s ease-in-out;
+  transition-delay: 0.1s;
+  text-align: left;
+  padding-left: 15px;
+  border-radius: 5px;
+}
+#navbar-area .btn li .home a {
+  color: #000;
+  font-size: 16px;
+  text-decoration: none;
+}
+#navbar-area .btn li .submenu {
+  overflow: hidden;
+  position: absolute;
+  margin-top: 10px;
+  background-color: white;
+  height: 0;
+  width: 150px;
+  line-height: 40px;
+  transition: height 0.3s ease-in-out;
+  transition-delay: 0.1s;
+  text-align: left;
+  padding-left: 15px;
+  border-radius: 5px;
+}
+#navbar-area .btn li .submenu a {
+  color: #000;
+  font-size: 16px;
+  text-decoration: none;
+}
+#navbar-area .btn li .categori {
+  overflow: hidden;
+  position: absolute;
+  margin-top: 10px;
+  background-color: white;
+  height: 0;
+  width: 800px;
+  line-height: 30px;
+  text-align: left;
+  transition: height 0.3s ease-in-out;
+  transition-delay: 0.2s;
+  text-align: left;
+  margin-left: -220px;
+  border-radius: 10px;
+}
+#navbar-area .btn li .categori table td {
+  border: none;
+}
+#navbar-area .btn li .categori table th {
+  font-size: 17px;
+  color: blue;
+}
+#navbar-area .btn li .categori table th:hover {
+  color: #000;
+}
+#navbar-area .btn h1 {
+  text-align: center;
+  font-family: satisfy;
+  font-weight: 300;
+}
+#navbar-area .navbar {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.drop-show {
+  display: block !important;
+}
+
+.categoriess {
+  display: none;
+}
+
+@media (max-width: 992px) {
+  .btn {
+    flex-direction: column;
+    align-items: flex-start !important;
+  }
+  .home {
+    position: inherit !important;
+    display: none;
+  }
+  .shop {
+    display: none;
+  }
+  .submenu {
+    position: inherit !important;
+  }
+  .nav-a {
+    color: #000 !important;
+    text-align: left !important;
+  }
+  .categori {
+    display: none !important;
+  }
+  #black-area .container .btn li:hover .submenu {
+    height: 100% !important;
+  }
+  #black-area .container .btn li:hover .submenu {
+    overflow: auto !important;
+  }
+  .dropdown-btnn {
+    display: block;
+  }
+  .dropdown-ul {
+    display: none;
+  }
+  .offcanvas-header {
+    justify-content: flex-end !important;
+  }
+}
+#scroll-section {
+  background-color: #283593;
+  z-index: 2;
+  position: fixed;
+  width: 100%;
+  display: block;
+  transition: 0.5s;
+}
+#scroll-section .inActive {
+  display: none;
+}
+#scroll-section .head {
+  height: 60px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+#scroll-section .head img {
+  color: white !important;
+}
+#scroll-section .scroll-body {
+  justify-content: space-between !important;
+}
+#scroll-section .offcanvas-body {
+  flex-grow: 0 !important;
+}
+#scroll-section .offcanvas {
+  width: 100% !important;
+}
+#scroll-section .offcanvas-header {
+  justify-content: flex-end !important;
+}
+#scroll-section .btn {
+  display: flex;
+  align-items: center;
+  font-size: 1vw !important;
+  padding: 0;
+  margin: 0;
+}
+#scroll-section .btn .admin {
+  background-color: #FF5722;
+  padding: 10px;
+  margin-right: 0;
+}
+#scroll-section .btn li {
+  display: inline-block;
+  transition: all 0.3s ease-in-out;
+  margin-right: 25px;
+}
+#scroll-section .btn li .nav-a {
+  color: white;
+  display: block;
+  text-decoration: none;
+  position: relative;
+  margin-top: 15px;
+  padding-bottom: 10px;
+}
+#scroll-section .btn li .nav-a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  bottom: -10px;
+  left: 0px;
+  background-color: #FF5722;
+  transition: all 0.2s ease-in-out;
+  transform: scale(0, 0);
+  visibility: hidden;
+}
+#scroll-section .btn li:hover .home {
+  height: 120px;
+}
+#scroll-section .btn li:hover .submenu {
+  height: 200px;
+}
+#scroll-section .btn li:hover .categori {
+  height: 250px;
+}
+#scroll-section .btn li:hover a::before {
+  visibility: visible;
+  transform: scale(1, 1);
+}
+#scroll-section .btn li .home {
+  overflow: hidden;
+  position: absolute;
+  margin-top: 10px;
+  background-color: white;
+  height: 0;
+  width: 150px;
+  line-height: 40px;
+  transition: height 0.3s ease-in-out;
+  transition-delay: 0.1s;
+  text-align: left;
+  padding-left: 15px;
+  border-radius: 5px;
+}
+#scroll-section .btn li .home a {
+  color: #000;
+  font-size: 16px;
+  text-decoration: none;
+}
+#scroll-section .btn li .submenu {
+  overflow: hidden;
+  position: absolute;
+  margin-top: 10px;
+  background-color: white;
+  height: 0;
+  width: 165px;
+  line-height: 40px;
+  transition: height 0.3s ease-in-out;
+  transition-delay: 0.1s;
+  text-align: left;
+  padding-left: 15px;
+  border-radius: 5px;
+}
+#scroll-section .btn li .submenu a {
+  color: #000;
+  font-size: 16px;
+  text-decoration: none;
+}
+#scroll-section .btn li .categori {
+  overflow: hidden;
+  position: absolute;
+  margin-top: 10px;
+  background-color: white;
+  height: 0;
+  width: 800px;
+  line-height: 30px;
+  text-align: left;
+  transition: height 0.3s ease-in-out;
+  transition-delay: 0.2s;
+  text-align: left;
+  margin-left: -220px;
+  border-radius: 10px;
+}
+#scroll-section .btn li .categori table td {
+  border: none;
+}
+#scroll-section .btn li .categori table th {
+  font-size: 17px;
+  color: blue;
+}
+#scroll-section .btn li .categori table th:hover {
+  color: #000;
+}
+#scroll-section .btn h1 {
+  text-align: center;
+  font-family: satisfy;
+  font-weight: 300;
+}
+
+#header2 {
   width: 100%;
   height: 500px;
   display: flex;
   justify-content: center;
   text-align: center;
   align-items: center;
-  margin-top: -143px;
   background-image: url(../../img/img-Accessories/page-title-bar.jpg);
   background-size: cover;
 }
-#header .head-img {
+#header2 .head-img {
   padding-top: 100px;
 }
-#header .head-img h1 {
+#header2 .head-img h1 {
   font-size: 50px;
   color: white;
 }
-#header .head-img span {
+#header2 .head-img span {
   color: white;
   font-size: 18px;
   font-weight: 300;
@@ -239,6 +762,7 @@
 #products .categories h5 {
   font-weight: bold;
 }
+
 .prod-first:hover .shop-icon {
   margin-bottom: 50px;
 }
@@ -291,6 +815,7 @@
 .categoriesSecond h5 {
   font-weight: bold;
 }
+
 .price {
   border-radius: 5px;
   background-color: #999999;

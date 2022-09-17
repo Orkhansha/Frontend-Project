@@ -94,12 +94,18 @@ body {
       }
 
       .prof-drop {
+        .dropdown-item{
+          color: #1e2125;
+          background-color: white;
+        }
         width: 50px;
         padding: 0 40px;
         border-top: none;
         border: none !important;
         display: flex;
         cursor: pointer;
+
+        
         i{
           color: #000;
         }

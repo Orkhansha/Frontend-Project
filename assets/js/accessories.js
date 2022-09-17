@@ -1,10 +1,4 @@
-$("#small-photo img").mouseover(function () {
-    document.getElementById("photo").src= this.src;
-})
-
-
-
-$(function () {
+  $(function () {
 
 
     let scrollSection = document.getElementById("scroll-section");
@@ -30,4 +24,4 @@ dropdownBtnn.forEach( element=>{
       console.log(this.nextElementSibling)
       this.nextElementSibling.classList.toggle("drop-show")
    })
-  });
+  })
