@@ -170,6 +170,21 @@ $(function () {
     }
   });
 
+/////////////////////////////////////////////////////////////
+
+$("input").focus(function () {
+    $(this).parents(".form-group").addClass("focused");
+  });
+
+  $("input").blur(function () {
+    var inputValue = $(this).val();
+    if (inputValue == "") {
+      $(this).removeClass("filled");
+      $(this).parents(".form-group").removeClass("focused");
+    } else {
+      $(this).addClass("filled");
+    }
+  });
 
 ///////////////////////////////////////////////////////////////////////////
   
@@ -182,16 +197,15 @@ if (localStorage.getItem("products") != null) {
 }
 
 
+
 basketBtns.forEach(basketBtn => {
     basketBtn.addEventListener("click", function (e) {
         e.preventDefault();
         let productImage = this.parentNode.parentNode.firstElementChild.getAttribute("src");
-        console.log(productImage);
         let productName = this.parentNode.parentNode.parentNode.nextElementSibling.firstElementChild.innerText;
         console.log(productName);
         let productCost = this.parentNode.parentNode.innerText;
         let productId = parseInt(this.parentNode.parentNode.parentNode.parentNode.getAttribute("cat-id"));
-console.log(productId)
         let existProduct = products.find(m => m.id == productId);
         let deleteProduct = products.delete;
 
@@ -219,7 +233,6 @@ console.log(productId)
 
 
 document.querySelector("sup").innerText = getProductsCount(products);
-console.log(getProductsCount(products));
 function getProductsCount(items) {
     let resultCount = 0;
     for (const item of items) {
