@@ -1,3 +1,31 @@
+$(function () {
+
+
+    let scrollSection = document.getElementById("scroll-section");
+     
+  
+    window.onscroll = function() {scrollFunction()};
+  
+    function scrollFunction() {
+      if (document.body.scrollTop > 195|| document.documentElement.scrollTop > 195) {
+         scrollSection.style.top = "0";
+      } else {
+         scrollSection.style.top = "-200px";
+         $("div").removeClass("inActive");
+      }
+    }
+  });
+  
+  let dropdownBtnn= document.querySelectorAll(".dropdown-btnn")
+     
+  dropdownBtnn.forEach( element=>{
+     element.addEventListener("click", function(){
+        console.log(this.nextElementSibling)
+        this.nextElementSibling.classList.toggle("drop-show")
+     })
+    })
+  
+
 var swiper = new Swiper(".mySwiper", {
     
     slidesPerView:4,
@@ -143,7 +171,7 @@ $(function () {
   });
 
 
-
+///////////////////////////////////////////////////////////////////////////
   
 let basketBtns = document.querySelectorAll(".prod-add a");
 
@@ -157,12 +185,13 @@ if (localStorage.getItem("products") != null) {
 basketBtns.forEach(basketBtn => {
     basketBtn.addEventListener("click", function (e) {
         e.preventDefault();
-        console.log("")
-        let productImage = this.parentNode.previousElementSibling.getAttribute("src");
-        let productName = this.parentNode.firstElementChild.innerText;
-        let productDesc = this.previousElementSibling.innerText;
-        let productId = parseInt(this.parentNode.parentNode.getAttribute("data-id"));
-
+        let productImage = this.parentNode.parentNode.firstElementChild.getAttribute("src");
+        console.log(productImage);
+        let productName = this.parentNode.parentNode.parentNode.nextElementSibling.firstElementChild.innerText;
+        console.log(productName);
+        let productCost = this.parentNode.parentNode.innerText;
+        let productId = parseInt(this.parentNode.parentNode.parentNode.parentNode.getAttribute("cat-id"));
+console.log(productId)
         let existProduct = products.find(m => m.id == productId);
         let deleteProduct = products.delete;
 
@@ -172,7 +201,7 @@ basketBtns.forEach(basketBtn => {
             products.push({
                 id: productId,
                 name: productName,
-                desc: productDesc,
+                cost: productCost,
                 image: productImage,
                 count: 1,
             })
@@ -190,7 +219,7 @@ basketBtns.forEach(basketBtn => {
 
 
 document.querySelector("sup").innerText = getProductsCount(products);
-
+console.log(getProductsCount(products));
 function getProductsCount(items) {
     let resultCount = 0;
     for (const item of items) {

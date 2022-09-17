@@ -665,6 +665,9 @@ body {
   border-bottom: 1px solid white;
   color: white;
 }
+#blue-foot .text-blue-foot .icon-inner {
+  color: white;
+}
 #blue-foot h1 {
   color: white;
 }
