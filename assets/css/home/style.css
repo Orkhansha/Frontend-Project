@@ -6,7 +6,6 @@ body {
   background-color: black;
 }
 #black-area .container {
-  height: 45px;
   background-color: black;
 }
 #black-area .container .welcome p {
@@ -101,10 +100,10 @@ body {
 }
 
 #center-area {
-  background-color: #F3F3F4;
+  background-color: #f3f3f4;
 }
 #center-area .container {
-  background-color: #F3F3F4;
+  background-color: #f3f3f4;
 }
 #center-area .container .head {
   height: 100px;
@@ -157,7 +156,7 @@ body {
   margin: 0;
 }
 #navbar-area .container .btn .admin {
-  background-color: #FF5722;
+  background-color: #ff5722;
   width: 125px;
 }
 #navbar-area .container .btn li {
@@ -181,7 +180,7 @@ body {
   height: 3px;
   bottom: -10px;
   left: 0px;
-  background-color: #FF5722;
+  background-color: #ff5722;
   transition: all 0.2s ease-in-out;
   transform: scale(0, 0);
   visibility: hidden;
@@ -247,6 +246,7 @@ body {
   background-color: white;
   height: 0;
   width: 800px;
+  padding: 0 30px;
   line-height: 30px;
   text-align: left;
   transition: height 0.3s ease-in-out;
@@ -293,7 +293,7 @@ body {
   margin: 0;
 }
 #navbar-area .btn .admin {
-  background-color: #FF5722;
+  background-color: #ff5722;
   width: 125px;
   height: 60px;
   padding-top: 4px;
@@ -393,44 +393,6 @@ body {
   display: none;
 }
 
-@media (max-width: 992px) {
-  .btn {
-    flex-direction: column;
-    align-items: flex-start !important;
-  }
-  .home {
-    position: inherit !important;
-    display: none;
-  }
-  .shop {
-    display: none;
-  }
-  .submenu {
-    position: inherit !important;
-  }
-  .nav-a {
-    color: #000 !important;
-    text-align: left !important;
-  }
-  .categori {
-    display: none !important;
-  }
-  #black-area .container .btn li:hover .submenu {
-    height: 100% !important;
-  }
-  #black-area .container .btn li:hover .submenu {
-    overflow: auto !important;
-  }
-  .dropdown-btnn {
-    display: block;
-  }
-  .dropdown-ul {
-    display: none;
-  }
-  .offcanvas-header {
-    justify-content: flex-end !important;
-  }
-}
 #scroll-section {
   background-color: #283593;
   z-index: 2;
@@ -441,6 +403,10 @@ body {
 }
 #scroll-section .inActive {
   display: none;
+}
+#scroll-section .navbar {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
 }
 #scroll-section .head {
   height: 60px;
@@ -471,10 +437,8 @@ body {
   margin: 0;
 }
 #scroll-section .btn .admin {
-  background-color: #FF5722;
-  width: 125px;
-  height: 60px;
-  padding-top: 4px;
+  background-color: #ff5722;
+  padding: 4px 10px;
   margin-right: 0;
 }
 #scroll-section .btn li {
@@ -497,7 +461,7 @@ body {
   height: 3px;
   bottom: -10px;
   left: 0px;
-  background-color: #FF5722;
+  background-color: #ff5722;
   transition: all 0.2s ease-in-out;
   transform: scale(0, 0);
   visibility: hidden;
@@ -540,7 +504,7 @@ body {
   margin-top: 10px;
   background-color: white;
   height: 0;
-  width: 165px;
+  width: 185px;
   line-height: 40px;
   transition: height 0.3s ease-in-out;
   transition-delay: 0.1s;
@@ -1021,6 +985,9 @@ body {
   position: relative;
   background-image: url(../../img/bg-sunglass.jpg);
   filter: brightness(0.5);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 #plus-section .div-plus .plus-text {
   position: absolute;
@@ -1033,17 +1000,21 @@ body {
 }
 #plus-section .div-plus .plus-text h1 {
   color: white;
-  font-size: 4.8rem;
+  font-size: 4.8vw;
   font-weight: 400;
 }
 #plus-section .div-plus .plus-text h2 {
   color: white;
-  font-size: 2.8rem;
+  font-size: 2.8vw;
   font-weight: 400;
 }
 #plus-section .div-plus .plus-text button {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
   width: 120px;
-  height: 100%;
   border-radius: 5px;
   font-weight: 500;
   border: none;
@@ -1140,9 +1111,11 @@ body {
   width: 100%;
   margin: auto;
 }
+#blue-foot .row {
+  --bs-gutter-x: 0 !important;
+}
 #blue-foot .info {
-  width: 31.5%;
-  margin: auto;
+  text-align: center;
 }
 #blue-foot .icon {
   position: absolute;
@@ -1156,6 +1129,9 @@ body {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
   left: 45%;
   top: -45px;
+  margin: auto;
+  right: 0;
+  left: 0;
 }
 #blue-foot .icon i {
   font-size: 40px;
@@ -1219,6 +1195,9 @@ body {
   font-weight: 700;
   text-decoration: none;
 }
+#download-area .row {
+  --bs-gutter-x: 0 !important;
+}
 #download-area .apple {
   width: 100%;
   height: 100px;
@@ -1253,7 +1232,7 @@ body {
   transition: 0.2s;
 }
 #my-footer li a:hover {
-  color: #FF4816 !important;
+  color: #ff4816 !important;
   transition: 0.2s;
 }
 #my-footer .copyright {
@@ -1262,4 +1241,63 @@ body {
 }
 #my-footer .text-center {
   text-align: left !important;
+}
+
+@media (max-width: 992px) {
+  .btn {
+    flex-direction: column;
+    align-items: flex-start !important;
+  }
+  .home {
+    position: inherit !important;
+    display: none;
+  }
+  .shop {
+    display: none;
+  }
+  .submenu {
+    position: inherit !important;
+  }
+  .nav-a {
+    color: #000 !important;
+    text-align: left !important;
+  }
+  .categori {
+    display: none !important;
+  }
+  #black-area .container .btn li:hover .submenu {
+    height: 100% !important;
+  }
+  #black-area .container .btn li:hover .submenu {
+    overflow: auto !important;
+  }
+  #center-area .container .input {
+    display: none;
+  }
+  .dropdown-ul {
+    display: none;
+  }
+  .offcanvas-header {
+    justify-content: flex-end !important;
+  }
+  .component-row {
+    gap: 60px;
+  }
+  #banner .banner-first {
+    margin-bottom: 20px;
+  }
+  #new-arriwals .col-lg-3 {
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 768px) {
+  #black-area {
+    display: none;
+  }
+  #banner .banner-row {
+    gap: 20px;
+  }
+  #banner .banner-first {
+    margin-bottom: 0px;
+  }
 }/*# sourceMappingURL=style.css.map */

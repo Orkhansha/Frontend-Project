@@ -194,6 +194,7 @@ let products = [];
 
 if (localStorage.getItem("products") != null) {
     products = JSON.parse(localStorage.getItem("products"))
+   
 }
 
 
@@ -201,9 +202,9 @@ if (localStorage.getItem("products") != null) {
 basketBtns.forEach(basketBtn => {
     basketBtn.addEventListener("click", function (e) {
         e.preventDefault();
+        
         let productImage = this.parentNode.parentNode.firstElementChild.getAttribute("src");
         let productName = this.parentNode.parentNode.parentNode.nextElementSibling.firstElementChild.innerText;
-        console.log(productName);
         let productCost = this.parentNode.parentNode.innerText;
         let productId = parseInt(this.parentNode.parentNode.parentNode.parentNode.getAttribute("cat-id"));
         let existProduct = products.find(m => m.id == productId);
@@ -220,6 +221,14 @@ basketBtns.forEach(basketBtn => {
                 count: 1,
             })
 
+            // Swal.fire({
+            //     position: "top-center",
+            //     icon: "success",
+            //     title: "Product added",
+            //     showConfirmButton: false,
+            //     timer: 1000,
+            //   });
+
             
         }
         
@@ -229,6 +238,7 @@ basketBtns.forEach(basketBtn => {
         
 
     })
+    
 });
 
 
