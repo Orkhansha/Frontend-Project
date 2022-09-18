@@ -18,50 +18,54 @@ body {
   height: 45px;
   padding-top: 10px;
   background-color: black;
-  border-top: none;
-  border-bottom: none;
+  border: none;
+  border-right: 1px solid white;
 }
-#black-area .container .flag-menu li img {
+#black-area .container .flag-menu li {
+  background-color: white !important;
+  z-index: 1050 !important;
+}
+#black-area .flag-menu li img {
   width: 26px;
   height: 26px;
+  border-radius: 50%;
 }
-#black-area .container .icons {
+#black-area .icons {
   display: flex;
   float: right;
 }
-#black-area .container .icons div {
+#black-area .icons div {
   width: 50px;
   height: 45px;
-  border: 1px solid gray;
-  border-top: none;
+  border-right: 1px solid white;
   position: relative;
   justify-content: center;
   align-items: center;
   display: flex;
   cursor: pointer;
 }
-#black-area .container .icons div img {
+#black-area .icons div img {
   width: 30px;
   height: 30px;
   border-radius: 50%;
   position: absolute;
 }
-#black-area .container .icons div a {
+#black-area .icons div a {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-#black-area .container .icons div a i {
+#black-area .icons div a i {
   color: white;
   font-size: 20px;
   position: absolute;
 }
-#black-area .container .icons div a i {
+#black-area .icons div a i {
   color: white;
   font-size: 20px;
   position: absolute;
 }
-#black-area .container .icons div a i sup {
+#black-area .icons div a i sup {
   border-radius: 50%;
   font-size: 10px;
   padding: 4px;
@@ -69,7 +73,7 @@ body {
   right: 5px;
   background-color: coral;
 }
-#black-area .container .icons div a sup {
+#black-area .icons div a sup {
   border-radius: 50%;
   font-size: 10px;
   padding: 4px;
@@ -77,10 +81,10 @@ body {
   right: 5px;
   background-color: coral;
 }
-#black-area .container .icons div div:nth-child(1) {
+#black-area .icons div div:nth-child(1) {
   border-left: none;
 }
-#black-area .container .icons .prof-drop {
+#black-area .icons .prof-drop {
   width: 50px;
   padding: 0 40px;
   border-top: none;
@@ -88,14 +92,14 @@ body {
   display: flex;
   cursor: pointer;
 }
-#black-area .container .icons .prof-drop .dropdown-item {
+#black-area .icons .prof-drop .dropdown-item {
   color: #1e2125;
   background-color: white;
 }
-#black-area .container .icons .prof-drop i {
+#black-area .icons .prof-drop i {
   color: #000;
 }
-#black-area .container .icons .prof-drop a {
+#black-area .icons .prof-drop a {
   padding-left: 30px;
 }
 
@@ -226,7 +230,7 @@ body {
   margin-top: 10px;
   background-color: white;
   height: 0;
-  width: 165px;
+  width: 185px;
   line-height: 40px;
   transition: height 0.3s ease-in-out;
   transition-delay: 0.1s;
@@ -381,6 +385,7 @@ body {
   font-weight: 300;
 }
 #navbar-area .navbar {
+  z-index: 1 !important;
   padding-top: 0 !important;
   padding-bottom: 0 !important;
 }
@@ -838,6 +843,10 @@ body {
   filter: brightness(1) !important;
   border-radius: 0 !important;
   position: relative;
+}
+#black-slider .Products #tab-menu-area .tab-menu .tab-body .card-header .prod-img:hover .prod-add {
+  transition: 0.5s;
+  transform: translateY(-25px);
 }
 #black-slider .Products #tab-menu-area .tab-menu .tab-body .card-header .prod-img .prod-price {
   position: absolute;

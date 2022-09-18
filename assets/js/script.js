@@ -31,10 +31,10 @@ var swiper = new Swiper(".mySwiper", {
     slidesPerView:4,
     loop:true,
     spaceBetween:20,
-    // autoplay:{
-    //     delay:7000,
-    //     disableOnInteraction:false,
-    // },
+    autoplay:{
+        delay:7000,
+        disableOnInteraction:false,
+    },
     breakpoints:{
         0:{
             slidesPerView:1,
@@ -116,10 +116,10 @@ $(function () {
     slidesPerView:4,
     loop:true,
     spaceBetween:20,
-    // autoplay:{
-    //     delay:3000,
-    //     disableOnInteraction:false,
-    // },
+    autoplay:{
+        delay:3000,
+        disableOnInteraction:false,
+    },
     breakpoints:{
         0:{
             slidesPerView:1,
@@ -146,10 +146,10 @@ $(function () {
     slidesPerView:5,
     loop:true,
     spaceBetween:20,
-    // autoplay:{
-    //     delay:3000,
-    //     disableOnInteraction:false,
-    // },
+    autoplay:{
+        delay:3000,
+        disableOnInteraction:false,
+    },
     breakpoints:{
         0:{
             slidesPerView:1,
@@ -205,7 +205,7 @@ basketBtns.forEach(basketBtn => {
         
         let productImage = this.parentNode.parentNode.firstElementChild.getAttribute("src");
         let productName = this.parentNode.parentNode.parentNode.nextElementSibling.firstElementChild.innerText;
-        let productCost = this.parentNode.parentNode.innerText;
+        let productCost = this.parentNode.previousElementSibling.firstElementChild.lastElementChild.innerText;
         let productId = parseInt(this.parentNode.parentNode.parentNode.parentNode.getAttribute("cat-id"));
         let existProduct = products.find(m => m.id == productId);
         let deleteProduct = products.delete;
@@ -221,13 +221,13 @@ basketBtns.forEach(basketBtn => {
                 count: 1,
             })
 
-            // Swal.fire({
-            //     position: "top-center",
-            //     icon: "success",
-            //     title: "Product added",
-            //     showConfirmButton: false,
-            //     timer: 1000,
-            //   });
+            Swal.fire({
+                position: "top-center",
+                icon: "success",
+                title: "Product added",
+                showConfirmButton: false,
+                timer: 1000,
+              });
 
             
         }
@@ -245,9 +245,7 @@ basketBtns.forEach(basketBtn => {
 document.querySelector("sup").innerText = getProductsCount(products);
 function getProductsCount(items) {
     let resultCount = 0;
-    for (const item of items) {
-        resultCount += item.count
-    }
+    resultCount += items.length
     return resultCount;
 }
 function getDeleteCount(items){

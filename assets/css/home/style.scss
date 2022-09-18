@@ -1,6 +1,7 @@
 body {
   overflow-x: hidden;
 }
+
 #black-area {
   background-color: black;
 
@@ -20,13 +21,21 @@ body {
       height: 45px;
       padding-top: 10px;
       background-color: black;
-      border-top: none;
-      border-bottom: none;
+      border: none;
+      border-right: 1px solid white;
+    }
+
+    .flag-menu li{
+      
+        background-color: white !important;
+        z-index: 1050 !important;
+      }
     }
 
     .flag-menu li img {
       width: 26px;
       height: 26px;
+      border-radius: 50%;
     }
 
     .icons {
@@ -36,8 +45,7 @@ body {
       div {
         width: 50px;
         height: 45px;
-        border: 1px solid gray;
-        border-top: none;
+        border-right: 1px solid white;
         position: relative;
         justify-content: center;
         align-items: center;
@@ -110,7 +118,6 @@ body {
       }
     }
   }
-}
 
 #center-area {
   background-color: #f3f3f4;
@@ -156,6 +163,7 @@ body {
 
 #navbar-area {
   background-color: #283593;
+  
 
   nav {
     float: inherit !important;
@@ -254,7 +262,7 @@ body {
           margin-top: 10px;
           background-color: white;
           height: 0;
-          width: 165px;
+          width: 185px;
           line-height: 40px;
           transition: height 0.3s ease-in-out;
           transition-delay: 0.1s;
@@ -451,12 +459,11 @@ body {
   }
 
   .navbar {
+    z-index: 1 !important;
     padding-top: 0 !important;
     padding-bottom: 0 !important;
   }
 }
-
-
 
 .drop-show {
   display: block !important;
@@ -465,7 +472,6 @@ body {
 .categoriess {
   display: none;
 }
-
 
 #scroll-section {
   background-color: #283593;
@@ -960,6 +966,12 @@ body {
               filter: brightness(1) !important;
               border-radius: 0 !important;
               position: relative;
+              &:hover{
+                .prod-add{
+                  transition: 0.5s;
+                  transform: translateY(-25px);
+                }
+              }
               .prod-price {
                 position: absolute;
                 bottom: 5%;

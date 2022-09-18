@@ -7,22 +7,21 @@
 }
 
 #top-area {
-  background-color: #333f99;
+  background-color: #333F99;
 }
 #top-area .container {
   padding: 10px 30px 10px 0;
-  height: 65px;
-  background-color: #333f99 !important;
+  background-color: #333F99 !important;
 }
 #top-area .container .my-row {
-  background-color: #333f99 !important;
+  background-color: #333F99 !important;
 }
 #top-area .container .my-btn {
   width: 100px;
   height: 45px;
   padding-top: 10px;
   border: none;
-  background-color: #333f99;
+  background-color: #333F99;
 }
 #top-area .container .flag-menu li img {
   width: 26px;
@@ -36,27 +35,29 @@
   float: right;
 }
 #top-area .container .icons .icn-shop {
-  background-color: #ff5722;
+  background-color: #FF5722;
   border-radius: 50%;
 }
 #top-area .container .icons .icn-heart {
-  background-color: #ff5722;
+  background-color: #FF5722;
   border-radius: 50%;
 }
 #top-area .container .icons div {
   width: 50px;
   height: 50px;
   position: relative;
+  display: flex;
   justify-content: center;
   align-items: center;
-  display: flex;
   cursor: pointer;
 }
 #top-area .container .icons div img {
-  width: 45px;
-  height: 45px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
   position: absolute;
+  left: 0;
+  top: 0;
 }
 #top-area .container .icons div i {
   color: white;
@@ -65,7 +66,7 @@
 #top-area .container .icons sup {
   font-size: 20px;
   padding: 4px;
-  background-color: #ff5722;
+  background-color: #FF5722;
   color: #fff;
   display: flex;
   justify-content: center;
@@ -78,6 +79,27 @@
 #top-area .container .icons div:nth-child(1) {
   border-left: none;
 }
+#top-area .container .dropdown-menu {
+  z-index: 1001;
+}
+#top-area .container .dropdown-menu .prof-drop {
+  width: 50px;
+  padding: 0 40px;
+  border-top: none;
+  border: none !important;
+  display: flex;
+  cursor: pointer;
+}
+#top-area .container .dropdown-menu .prof-drop .dropdown-item {
+  color: #1e2125;
+  background-color: white;
+}
+#top-area .container .dropdown-menu .prof-drop i {
+  color: #000;
+}
+#top-area .container .dropdown-menu .prof-drop a {
+  padding-left: 30px;
+}
 
 #navbar-area {
   background-color: #283593;
@@ -87,11 +109,13 @@
   transition: 0.5s;
 }
 #navbar-area .navbar {
-  padding-left: 400px;
   background-color: #283593 !important;
 }
 #navbar-area nav {
   float: inherit !important;
+}
+#navbar-area .offcanvas-body {
+  justify-content: center;
 }
 #navbar-area .container nav {
   margin-left: 20px;
@@ -103,7 +127,7 @@
   margin: 0;
 }
 #navbar-area .container .btn .admin {
-  background-color: #ff5722;
+  background-color: #FF5722;
   width: 125px;
 }
 #navbar-area .container .btn li {
@@ -127,7 +151,7 @@
   height: 3px;
   bottom: -10px;
   left: 0px;
-  background-color: #ff5722;
+  background-color: #FF5722;
   transition: all 0.2s ease-in-out;
   transform: scale(0, 0);
   visibility: hidden;
@@ -240,7 +264,7 @@
   margin: 0;
 }
 #navbar-area .btn .admin {
-  background-color: #ff5722;
+  background-color: #FF5722;
   width: 125px;
   padding-top: 4px;
   margin-right: 0;
@@ -339,44 +363,6 @@
   display: none;
 }
 
-@media (max-width: 992px) {
-  .btn {
-    flex-direction: column;
-    align-items: flex-start !important;
-  }
-  .home {
-    position: inherit !important;
-    display: none;
-  }
-  .shop {
-    display: none;
-  }
-  .submenu {
-    position: inherit !important;
-  }
-  .nav-a {
-    color: #000 !important;
-    text-align: left !important;
-  }
-  .categori {
-    display: none !important;
-  }
-  #black-area .container .btn li:hover .submenu {
-    height: 100% !important;
-  }
-  #black-area .container .btn li:hover .submenu {
-    overflow: auto !important;
-  }
-  .dropdown-btnn {
-    display: block;
-  }
-  .dropdown-ul {
-    display: none;
-  }
-  .offcanvas-header {
-    justify-content: flex-end !important;
-  }
-}
 #scroll-section {
   background-color: #283593;
   z-index: 2;
@@ -387,6 +373,10 @@
 }
 #scroll-section .inActive {
   display: none;
+}
+#scroll-section .navbar {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
 }
 #scroll-section .head {
   height: 60px;
@@ -417,7 +407,7 @@
   margin: 0;
 }
 #scroll-section .btn .admin {
-  background-color: #ff5722;
+  background-color: #FF5722;
   padding: 10px;
   margin-right: 0;
 }
@@ -441,7 +431,7 @@
   height: 3px;
   bottom: -10px;
   left: 0px;
-  background-color: #ff5722;
+  background-color: #FF5722;
   transition: all 0.2s ease-in-out;
   transform: scale(0, 0);
   visibility: hidden;
@@ -668,4 +658,56 @@
 }
 #my-footer .text-center {
   text-align: left !important;
+}
+
+@media (max-width: 992px) {
+  #top-area .language {
+    display: none !important;
+  }
+  .btn {
+    flex-direction: column;
+    align-items: flex-start !important;
+  }
+  .home {
+    position: inherit !important;
+    display: none;
+  }
+  .shop {
+    display: none;
+  }
+  .submenu {
+    position: inherit !important;
+  }
+  .nav-a {
+    color: #000 !important;
+    text-align: left !important;
+  }
+  .categori {
+    display: none !important;
+  }
+  #black-area .container .btn li:hover .submenu {
+    height: 100% !important;
+  }
+  #black-area .container .btn li:hover .submenu {
+    overflow: auto !important;
+  }
+  .dropdown-btnn {
+    display: block;
+  }
+  .dropdown-ul {
+    display: none;
+  }
+  .offcanvas-header {
+    justify-content: flex-end !important;
+  }
+}
+@media (max-width: 768px) {
+  .profile-dropdownn {
+    display: none !important;
+  }
+  .logo-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }/*# sourceMappingURL=contact.css.map */

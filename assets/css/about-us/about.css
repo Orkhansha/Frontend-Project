@@ -56,8 +56,8 @@ body {
   cursor: pointer;
 }
 #top-area .container .icons div img {
-  width: 45px;
-  height: 45px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
   position: absolute;
   left: 0;
@@ -367,47 +367,6 @@ body {
   display: none;
 }
 
-@media (max-width: 992px) {
-  #top-area .language {
-    display: none !important;
-  }
-  .btn {
-    flex-direction: column;
-    align-items: flex-start !important;
-  }
-  .home {
-    position: inherit !important;
-    display: none;
-  }
-  .shop {
-    display: none;
-  }
-  .submenu {
-    position: inherit !important;
-  }
-  .nav-a {
-    color: #000 !important;
-    text-align: left !important;
-  }
-  .categori {
-    display: none !important;
-  }
-  #black-area .container .btn li:hover .submenu {
-    height: 100% !important;
-  }
-  #black-area .container .btn li:hover .submenu {
-    overflow: auto !important;
-  }
-  .dropdown-btnn {
-    display: block;
-  }
-  .dropdown-ul {
-    display: none;
-  }
-  .offcanvas-header {
-    justify-content: flex-end !important;
-  }
-}
 #scroll-section {
   background-color: #283593;
   z-index: 2;
@@ -418,6 +377,10 @@ body {
 }
 #scroll-section .inActive {
   display: none;
+}
+#scroll-section .navbar {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
 }
 #scroll-section .head {
   height: 60px;
@@ -515,7 +478,7 @@ body {
   margin-top: 10px;
   background-color: white;
   height: 0;
-  width: 165px;
+  width: 185px;
   line-height: 40px;
   transition: height 0.3s ease-in-out;
   transition-delay: 0.1s;
@@ -846,6 +809,7 @@ body {
   width: 100%;
   padding: 1px;
 }
+
 #textes {
   padding: 0;
 }
@@ -951,6 +915,47 @@ body {
   text-align: left !important;
 }
 
+@media (max-width: 992px) {
+  #top-area .language {
+    display: none !important;
+  }
+  .btn {
+    flex-direction: column;
+    align-items: flex-start !important;
+  }
+  .home {
+    position: inherit !important;
+    display: none;
+  }
+  .shop {
+    display: none;
+  }
+  .submenu {
+    position: inherit !important;
+  }
+  .nav-a {
+    color: #000 !important;
+    text-align: left !important;
+  }
+  .categori {
+    display: none !important;
+  }
+  #black-area .container .btn li:hover .submenu {
+    height: 100% !important;
+  }
+  #black-area .container .btn li:hover .submenu {
+    overflow: auto !important;
+  }
+  .dropdown-btnn {
+    display: block;
+  }
+  .dropdown-ul {
+    display: none;
+  }
+  .offcanvas-header {
+    justify-content: flex-end !important;
+  }
+}
 @media (max-width: 768px) {
   .profile-dropdownn {
     display: none !important;
