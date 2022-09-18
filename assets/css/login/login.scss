@@ -43,7 +43,6 @@ body {
     transition-duration: 0.3s;
     background: #fff;
     transform: translateY(100px) scale(0.4);
-    
   }
 
   &-title {
@@ -79,7 +78,7 @@ body {
     background: rgb(255, 255, 255);
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.16);
     transition: 0.3s;
-    
+
     &:hover {
       border-color: rgba(255, 255, 255, 0.2);
       background: mediumvioletred;
@@ -107,7 +106,6 @@ body {
 
     .modal-button {
       opacity: 0;
-      
     }
 
     .modal-container {
@@ -141,11 +139,11 @@ body {
   }
 }
 
-.btn-outline-success{
-    background-color: #FF5722;
-    width: 100px;
-    color: white;
-    font-size: 14px;
+.btn-outline-success {
+  background-color: #ff5722;
+  width: 100px;
+  color: white;
+  font-size: 14px;
 }
 
 .sign-up {
@@ -228,9 +226,9 @@ body {
   padding: 0;
   cursor: pointer;
 }
-a{
-    text-decoration: none;
-  }
+a {
+  text-decoration: none;
+}
 .scroll-down {
   position: fixed;
   top: 50%;
@@ -250,37 +248,32 @@ a{
   }
 }
 
-
-
 .form-wrapper {
   max-width: 30%;
   min-width: 300px;
   padding: 50px 30px 50px 30px;
-  margin: 50px auto;   
+  margin: 50px auto;
   background-color: #ffffff;
   border-radius: 5px;
-  box-shadow: 0 15px 35px rgba(50,50,93,.1),0 5px 15px rgba(0,0,0,.07);
+  box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07);
 }
 
 .form-group {
-  position:relative;  
+  position: relative;
 
   & + .form-group {
     margin-top: 20px;
   }
-
-  
 }
 
-.btn-form{
-
-      color: #fff;
-      font-size: 14px;
-      font-weight: 600;
-      background-color: #FF5722;
-      width: 150px;
-      height: 50px;
-      border-radius: 0;
+.btn-form {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  background-color: #ff5722;
+  width: 150px;
+  height: 50px;
+  border-radius: 0;
 }
 
 .form-label {
@@ -295,7 +288,7 @@ a{
 
 .focused .form-label {
   transform: translateY(-125%);
-  font-size: .75em;
+  font-size: 0.75em;
 }
 
 .form-input {
@@ -306,7 +299,7 @@ a{
   border: 0;
   box-shadow: 0 1px 0 0 #e5e5e5;
   transition: box-shadow 150ms ease-out;
-  
+
   &:focus {
     box-shadow: 0 2px 0 0 blue;
   }
@@ -316,8 +309,7 @@ a{
   box-shadow: 0 2px 0 0 lightgreen;
 }
 
-
-@media(max-width: 750px) {
+@media (max-width: 750px) {
   .modal-container {
     width: 90%;
   }

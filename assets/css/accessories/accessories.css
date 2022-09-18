@@ -11,21 +11,21 @@ body {
 }
 
 #top-area {
-  background-color: #333F99;
+  background-color: #333f99;
 }
 #top-area .container {
   padding: 10px 30px 10px 0;
-  background-color: #333F99 !important;
+  background-color: #333f99 !important;
 }
 #top-area .container .my-row {
-  background-color: #333F99 !important;
+  background-color: #333f99 !important;
 }
 #top-area .container .my-btn {
   width: 100px;
   height: 45px;
   padding-top: 10px;
   border: none;
-  background-color: #333F99;
+  background-color: #333f99;
 }
 #top-area .container .flag-menu li img {
   width: 26px;
@@ -39,11 +39,11 @@ body {
   float: right;
 }
 #top-area .container .icons .icn-shop {
-  background-color: #FF5722;
+  background-color: #ff5722;
   border-radius: 50%;
 }
 #top-area .container .icons .icn-heart {
-  background-color: #FF5722;
+  background-color: #ff5722;
   border-radius: 50%;
 }
 #top-area .container .icons div {
@@ -70,7 +70,7 @@ body {
 #top-area .container .icons sup {
   font-size: 20px;
   padding: 4px;
-  background-color: #FF5722;
+  background-color: #ff5722;
   color: #fff;
   display: flex;
   justify-content: center;
@@ -131,7 +131,7 @@ body {
   margin: 0;
 }
 #navbar-area .container .btn .admin {
-  background-color: #FF5722;
+  background-color: #ff5722;
   width: 125px;
 }
 #navbar-area .container .btn li {
@@ -155,7 +155,7 @@ body {
   height: 3px;
   bottom: -10px;
   left: 0px;
-  background-color: #FF5722;
+  background-color: #ff5722;
   transition: all 0.2s ease-in-out;
   transform: scale(0, 0);
   visibility: hidden;
@@ -268,7 +268,7 @@ body {
   margin: 0;
 }
 #navbar-area .btn .admin {
-  background-color: #FF5722;
+  background-color: #ff5722;
   width: 125px;
   padding-top: 4px;
   margin-right: 0;
@@ -411,7 +411,7 @@ body {
   margin: 0;
 }
 #scroll-section .btn .admin {
-  background-color: #FF5722;
+  background-color: #ff5722;
   padding: 10px;
   margin-right: 0;
 }
@@ -435,7 +435,7 @@ body {
   height: 3px;
   bottom: -10px;
   left: 0px;
-  background-color: #FF5722;
+  background-color: #ff5722;
   transition: all 0.2s ease-in-out;
   transform: scale(0, 0);
   visibility: hidden;
